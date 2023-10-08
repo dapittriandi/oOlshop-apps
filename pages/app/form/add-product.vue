@@ -171,10 +171,10 @@ export default {
         brand: document.getElementById('brand').value,
         harga: document.getElementById('harga').value,
         gambar: document.getElementById('gambar').value,
-        size: document.getElementById('gambar').size,
-        deskripsi: document.getElementById('gambar').deskripsi,
-        stok: document.getElementById('gambar').stok,
-        kategori: document.getElementById('gambar').kategori
+        size: document.getElementById('size').size,
+        deskripsi: document.getElementById('deskripsi').deskripsi,
+        stok: document.getElementById('stok').stok,
+        kategori: document.getElementById('kategori').kategori
       }
       console.log(dataForm)
       const response = await fetch(

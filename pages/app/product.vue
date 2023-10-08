@@ -20,7 +20,7 @@
           <img :src="product.gambar" alt="gambar-products">
           <div class="productDeskripsi">
             <span>{{ product.brand }}</span>
-            <span>{{ product.detail ? 'sudah dibeli' : 'belum dibeli' }}</span>
+            <!-- <span>{{ product.detail ? 'sudah dibeli' : 'belum dibeli' }}</span> -->
             <h5>{{ product.title }}</h5>
             <div class="star">
               <i class="fas fa-star" />
@@ -67,6 +67,7 @@ export default {
   },
   mounted () {
     this.getProducts()
+    console.log(this.products)
   },
   methods: {
     async getProducts () {
@@ -136,8 +137,7 @@ body {
 
 #sectionProduct .proGrid {
   width: 23%;
-  max-width: 270px;
-  height: 460px;
+  min-width: 250px;
   padding: 10px 12px;
   border: 1px solid #cce7d0;
   border-radius: 25px;
@@ -199,24 +199,5 @@ body {
   position: absolute;
   bottom: 20px;
   right: 10px;
-}
-
-.BuyRoleButton {
-  text-decoration: none;
-  position: absolute;
-  bottom: 23px;
-  right: 60px;
-  color: #fff;
-  border-radius: 5px;
-  /* border: 1px solid #080808; */
-  background-color: #088178;
-  padding: 4px 11px;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.BuyRoleButton:hover {
-  background-color: #078d84c0;
-  opacity: 0.9;
 }
 </style>

@@ -21,17 +21,17 @@
                 "
               >Product</a>
               <div class="navbar-dropdown">
-                <nuxt-link class="navbar-item" to="/add-product">
+                <nuxt-link class="navbar-item" to="/product">
                   Product Check
                 </nuxt-link>
                 <nuxt-link class="navbar-item" to="/app/form/add-product">
                   Add Product
                 </nuxt-link>
-                <nuxt-link class="navbar-item" to="/app/form/add-product">
+                <!-- <nuxt-link class="navbar-item" to="/app/form/add-product">
                   tambah
-                </nuxt-link>
+                </nuxt-link> -->
                 <hr class="navbar-divider">
-                <a class="navbar-item" href="/app/cart/">cart</a>
+                <a class="navbar-item" href="/profile-user">Profile</a>
               </div>
             </div>
           </li>
@@ -52,10 +52,9 @@
             "
           >
             <a class="navbar-link" style="border-radius: 10px; color: #000">
-              {{ loggedInUser.username }}
               <i
                 class="fas fa-user"
-                style="color: #3877ff; margin-left: 7px; font-size: 20px"
+                style="color: #3877ff; font-size: 20px"
               /></a>
             <div class="navbar-dropdown">
               <nuxt-link class="navbar-item" to="/profile">

@@ -57,6 +57,9 @@
                           <a class="btn btn-danger w-100" @click="deleteDataProducts">Delete<i class="fas fa-trash fa-lg" style="font-size: 15px;" /></a>
                         </nuxt-link>
                       </div>
+                      <nuxt-link class="btn btn-primary btn-rounded btn-lg" to="/app/product">
+                       View All Product
+                      </nuxt-link>
                     </div>
                   </div>
                 </div>
@@ -92,14 +95,14 @@
         </div> -->
         </div>
       </div>
-      <div>
+      <!-- <div>
         <div style="margin: 5px;">
           View All
         </div>
         <nuxt-link class="btn btn-outline-secondary" to="/app/product">
           Item
         </nuxt-link>
-      </div>
+      </div> -->
     </section>
   </div>
 </template>

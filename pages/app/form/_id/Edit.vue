@@ -71,6 +71,54 @@
                           Product Image Can't Be Empty and input url image
                         </div>
                       </div>
+                      <div class="form-group">
+                        <label for="size">Product Size:</label>
+                        <input
+                          id="size"
+                          name="size"
+                          type="text"
+                          class="form-control"
+                        >
+                        <div class="invalid-feedback">
+                          Product Size Can't Be Empty
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="deskripsi">Product Deskripsi:</label>
+                        <input
+                          id="deskripsi"
+                          name="deskripsi"
+                          type="text"
+                          class="form-control"
+                        >
+                        <div class="invalid-feedback">
+                          Product Deskripsi Can't Be Empty
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="stok">Product Stock:</label>
+                        <input
+                          id="stok"
+                          name="stok"
+                          type="number"
+                          class="form-control"
+                        >
+                        <div class="invalid-feedback">
+                          Product Stock Can't Be Empty
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="kategori">Product Category:</label>
+                        <input
+                          id="kategori"
+                          name="kategori"
+                          type="text"
+                          class="form-control"
+                        >
+                        <div class="invalid-feedback">
+                          Product Stok Can't Be Empty and input url image
+                        </div>
+                      </div>
                       <!-- <p>Product Image:</p>
                           <div class="custom-file">
                             <input
@@ -139,11 +187,11 @@ export default {
       this.brand = data[0]?.brand
       this.gambar = data[0]?.gambar
       this.harga = data[0]?.harga
-      // this.deskripsi = data[0]?.deskripsi
-      // this.size = data[0]?.size
-      // this.stok = data[0]?.stok
-      // this.kategori = data[0]?.kategori
-      // this.productId = data[0]?.id
+      this.deskripsi = data[0]?.deskripsi
+      this.size = data[0]?.size
+      this.stok = data[0]?.stok
+      this.kategori = data[0]?.kategori
+      this.productId = data[0]?.id
     },
     async onFormSubmit () {
       //   const tambahProducts = document.getElementById('tambah-products')
@@ -154,11 +202,11 @@ export default {
         brand: document.getElementById('brand').value,
         harga: document.getElementById('harga').value,
         gambar: document.getElementById('gambar').value,
-        id: document.getElementById('id').value
-        // deskripsi: document.getElementById('deskripsi').value,
-        // kategori: document.getElementById('kategori').value,
-        // stok: document.getElementById('stok').value,
-        // size: document.getElementById('size').value
+        id: document.getElementById('id').value,
+        deskripsi: document.getElementById('deskripsi').value,
+        kategori: document.getElementById('kategori').value,
+        stok: document.getElementById('stok').value,
+        size: document.getElementById('size').value
       }
       // console.log(dataForm)
       const response = await fetch(
